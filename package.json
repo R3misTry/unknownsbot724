@@ -1,0 +1,32 @@
+{
+  "name": "The.Unknowns.Soldier",
+  "version": "0.2.5",
+  "description": "",
+  "main": "bot.js",
+  "scripts": {
+    "test": "node bot.js"
+  },
+  "author": "Mert",
+  "license": "ISC",
+  "dependencies": {
+    "ban": "0.0.0",
+    "chalk": "^2.4.1",
+    "cleverbot-node": "^0.3.11",
+    "cool-images": "^1.0.1",
+    "discord.js": "^11.3.1",
+    "discord.js-commando": "^0.10.0",
+    "generate-password": "^1.4.0",
+    "kick": "^1.6.0",
+    "math": "0.0.3",
+    "math-expression-evaluator": "^1.2.17",
+    "moment": "^2.21.0",
+    "moment-duration-format": "^2.2.2",
+    "ms": "^2.1.1",
+    "mute": "^2.0.6",
+    "opusscript": "0.0.6",
+    "request": "^2.88.0",
+    "weather.js": "^0.1.0",
+    "xmlhttprequest": "^1.8.0",
+    "ytdl-core": "^0.23.0"
+  }
+}
