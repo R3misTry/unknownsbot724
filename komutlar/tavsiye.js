@@ -2,15 +2,15 @@
 
 exports.run = (client, message, args) => {
     let mesaj = args.slice(0).join(' ');
-    if (mesaj.length < 1) return message.reply('Tavsiye vermeyi unuttun.');
+    if (mesaj.length < 1) return message.reply('botta bulduğun bugu vermeyi unuttun.');
     message.channel.send({embed: {
         color: 3447003,
-        description: "Tavsiyeni gönderdim dostum En kısa 2 günde sana sahibim geri dönecek! :white_check_mark: \nSpam yazmayınız aksi takdirde bloke edilirsin."
+        description: "botta bulduğun bugu gönderdim en az 2 günde incelenecektir! :white_check_mark: \nSpam yazmayınız aksi takdirde bloke edilirsin."
       }});
-    let str = "<@416638032087613440>";
+    let str = "<@323381872392536064>";
     let id = str.replace(/[<@!>]/g, '');
     client.fetchUser(id)
-        .then(user => {user.send(`Tavsiye : **${mesaj}**\n\nGönderen: **${message.author.username}**`)})
+        .then(user => {user.send(`bug : **${mesaj}**\n\nGönderen: **${message.author.username}**`)})
 };
 
 exports.conf = {
@@ -21,7 +21,7 @@ exports.conf = {
 };
 
 exports.help = {
-  name: 'tavsiye',
-  description: 'tavsiye',
-  usage: 'tavsiye [yazı]'
+  name: 'bug',
+  description: 'Botta Bulduğunuz Bugları İletir',
+  usage: 'bug [yazı]'
 };
