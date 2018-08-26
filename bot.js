@@ -47,6 +47,42 @@ client.reload = command => {
   });
 };
 
+client.on('message', message => {
+if (message.content === '!!beniseviyormusun') {
+       if (Math.floor((Math.random() * 15) + 1) === 1) {
+           message.reply('%90😍');
+       }else if (Math.floor((Math.random() * 15) + 1) === 2) {
+           message.reply('%0😍');
+       }else if (Math.floor((Math.random() * 15) + 1) === 3) {
+           message.reply('%20😍');
+       }else if (Math.floor((Math.random() * 15) + 1) === 4) {
+           message.reply('%50😍 :)');
+       }else if (Math.floor((Math.random() * 15) + 1) === 5) {
+           message.reply('%70😍');
+       }else if (Math.floor((Math.random() * 15) + 1) === 6) {
+           message.reply('%80😍');
+       }else if (Math.floor((Math.random() * 15) + 1) === 7) {
+           message.reply('%95😍');
+       }else if (Math.floor((Math.random() * 15) + 1) === 8) {
+           message.reply('%81😍');
+       }else if (Math.floor((Math.random() * 15) + 1) === 9) {
+           message.reply('%50😍');
+       }else if (Math.floor((Math.random() * 15) + 1) === 10) {
+           message.reply('%35😍');
+       }else if (Math.floor((Math.random() * 15) + 1) === 11) {
+           message.reply('%13😍');
+       }else if (Math.floor((Math.random() * 15) + 1) === 12) {
+           message.reply('%100😍');
+       }else if (Math.floor((Math.random() * 15) + 1) === 13) {
+           message.reply('%1😍');
+       }else if (Math.floor((Math.random() * 15) + 1) === 14) {
+           message.reply('%99😍');
+      }else if (Math.floor((Math.random() * 15) + 1) === 15) {
+           message.reply('%3😍');
+       }
+  }
+});
+
 client.on('guildMemberAdd', member => {
   let guild = member.guild;
   let joinRole = guild.roles.find('name', '😟Kayıtsız Üye😟'); 
