@@ -106,6 +106,13 @@ client.unload = command => {
   });
 };
 
+client.on ('message', message => {
+if (message.content === prefix + "sunucuemojileri") {
+  const emojiList = message.guild.emojis.map(e=>e.toString()).join(" **|** ");
+  message.channel.send(emojiList);
+}
+})
+
 client.on('message', async msg => {
   if (msg.content.toLowerCase() === 'sa') {
     await msg.react('🇦');
