@@ -8,7 +8,7 @@ exports.run = (client, message) => {
   .setTitle("Bot Komutları")
   .setAuthor("The.Unknowns.Bot | Yapımcı R3misTry#9359", "")
   .setColor("RANDOM")
-  .setDescription('!!davet • Botun davet linkini atar.\n!!bug(Bakımdadır!) • Bottaki bugu bildirmenizi sağlar.\n!!ping • Botun pingini gösterir.\n!!sunucubilgi • Bu komutu hangi sunucuda kullanıysanız oranın bilgisini verir.\n!!yardım • ardım Komutlarını Gösterir\n!!ailemiz • Botun Kaç Serverde Ve Serverlerin İsmini Gösterir.')
+  .setDescription('!!davet • Botun davet linkini atar.\n!!bug • Bottaki bugu bildirmenizi sağlar.\n!!ping • Botun pingini gösterir.\n!!sunucubilgi • Bu komutu hangi sunucuda kullanıysanız oranın bilgisini verir.\n!!yardım • ardım Komutlarını Gösterir\n!!ailemiz • Botun Kaç Serverde Ve Serverlerin İsmini Gösterir.\n!!sunucuemojileri • Sunucuda Yüklenen Emojileri Gösterir.')
   .setFooter("")
   .setThumbnail("")
   .setTimestamp()
