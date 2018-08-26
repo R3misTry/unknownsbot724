@@ -106,9 +106,16 @@ client.unload = command => {
   });
 };
 
+client.on('message', async msg => {
+  if (msg.content.toLowerCase() === 'sa') {
+    await msg.react('🇦');
+    msg.react('🇸');
+  }
+  });
+
 client.on('message', msg => {
   if (msg.content.toLowerCase() === 'sa') {
-    msg.reply(':regional_indicator_a: :regional_indicator_l: :regional_indicator_e: :regional_indicator_y: :regional_indicator_k: :regional_indicator_u: :regional_indicator_m: :regional_indicator_s: :regional_indicator_e: :regional_indicator_l: :regional_indicator_a: :regional_indicator_m:');
+    msg.reply(':regional_indicator_a: :regional_indicator_l: :regional_indicator_e: :regional_indicator_y: :regional_indicator_k: :regional_indicator_u: :regional_indicator_m:      :regional_indicator_s: :regional_indicator_e: :regional_indicator_l: :regional_indicator_a: :regional_indicator_m:');
   }
 });
 
